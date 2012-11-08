@@ -82,7 +82,7 @@
 						<% if(items[i].is_dir) { %>
 						<span data-act="changePath:<%= items[i].f_path %>#dblclick" class="ext_b ir ext_b_dir">dir</span>
 						<% } else { %>
-							<% if(items[i].t_ext != "img") { %>
+							<% if(items[i].t_ext != "img" || items[i].size > 100000) { %>
 							<span data-act="link:<%= items[i].name %>#dblclick" class="ext_b ir ext_<%= items[i].t_ext %>_b ext_<%= items[i].t_ext %>_<%= items[i].ext %>_b">file</span>
 							<% } else { %>
 							<span class="axis"></span>

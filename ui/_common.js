@@ -410,6 +410,8 @@
 	
 	var FtpUtil = new function() {
 		this.imgResize = function(img, opts) {
+			if(typeof(img) != "object") return;
+			
 			var options = _.extend({
 				maxWidth: 800,
 				maxHeight: 600,

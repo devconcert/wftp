@@ -153,10 +153,9 @@
 			for(var i in items) {
 				var item = items[i];
 				
-				if(!item.is_dir && item.t_ext == "img") {
+				if(!item.is_dir && item.t_ext == "img" && item.size <= 100000) { // 용량 제한 100kb
 					socket.emit("thumb", { 
 						index: i,
-						ext: item.ext,
 						path: item.f_path
 					});
 				}
@@ -345,7 +344,7 @@
 				});
 				
 				img.style.display = "";
-			}, 10);
+			}, 100);
 		});
 		
 		socket.on("rename", function(args) {
