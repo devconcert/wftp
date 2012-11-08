@@ -266,8 +266,6 @@
 				
 				main.filelist.act.checkedFile({ target: elem }, i);
 			}
-			
-			e.stopPropagation();
 		}
 		
 		act.createDir = function(e) {
