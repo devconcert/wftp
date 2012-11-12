@@ -36,7 +36,6 @@
 <script src="ui/menu.js"></script>
 
 <script>
-	window.MvvmUI = vo;
 	window.host = "http://app.inpost.kr/wftp";
 </script>
 <script>
@@ -56,7 +55,7 @@
 	</div>
 
 	<!-- 템플릿 로드 하는 부분 -->
-	<script>MvvmUI.includeTpl("_common", "auth", "upload", "download", "popup", "menu", "topWrap:top", "bodyWrap:body", "footerWrap:footer", { path: "tpl" });</script>
+	<script>vo.includeTpl("_common", "auth", "upload", "download", "popup", "menu", "topWrap:top", "bodyWrap:body", "footerWrap:footer", { path: "tpl" });</script>
     
     <!-- 페이스북 소셜 기능 -->
     <div id="fb-root"></div>

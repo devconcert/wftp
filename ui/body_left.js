@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIBodyLeft = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 
 		var self 		= this,
 			dirList 	= null;

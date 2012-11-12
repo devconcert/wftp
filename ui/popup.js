@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIPopup = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var self	 = this,
 			wftp	 = opts.wftp,
@@ -36,7 +36,7 @@
 			var temp = tpl.tpl_img("popup_main", { down: _.downLink(name, data), data: data, ext: ext, name: name, isLink: getLink(name) });
 			
 			setTimeout(function() {
-				FtpUtil.imgResize($(temp).find("img").get(0));
+				_.imgResize($(temp).find("img").get(0));
 				commonShow();
 			}, 50);
 		}

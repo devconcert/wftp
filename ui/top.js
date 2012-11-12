@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUITop = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 	
 		var wftp	 = opts.wftp,
 			ftpList	 = wftp.getFtpList();

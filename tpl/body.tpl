@@ -10,4 +10,4 @@
 <div id="mainWrap" data-bind="line#margin-left"></div><hr>
 
 <!-- 템플릿 로드 하는 부분 -->
-<script>MvvmUI.includeTpl("leftWrap:body_left", "mainWrap:body_main", { path: "tpl" });</script>	
+<script>vo.includeTpl("leftWrap:body_left", "mainWrap:body_main", { path: "tpl" });</script>	

@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIDownList = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var	self		= this,
 			ready		= false,
@@ -122,7 +122,7 @@
 	};
 	
 	var FtpUIDownload = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 
 		var	self		= this,
 			path		= "",

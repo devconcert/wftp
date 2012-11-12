@@ -1,7 +1,7 @@
 (function(exports) {
 	var FtpUIFileList = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
-		
+		vo.applyTo(this, opts.id);	
+			
 		var main		= opts.main,
 			type		= "view";
 		
@@ -227,7 +227,7 @@
 	}
 
 	var FtpUIToolbar = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var main		= opts.main;
 		
@@ -321,7 +321,7 @@
 	}
 	
 	var FtpUIBodyMain = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var self = this,
 			act	 = this.act;

@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIBody = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 
 		var self 			= this,
 			wftp			= opts.wftp,
@@ -336,7 +336,7 @@
 			setTimeout(function() { 
 				var img = bind.get("thumb")[args.index];
 				
-				FtpUtil.imgResize(img, {
+				_.imgResize(img, {
 					maxWidth: 100,
 					maxHeight: 80,
 					ieWidth: 100,

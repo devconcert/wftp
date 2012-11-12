@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIFileCheck = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var	self			= this,
 			isCkAll			= false,
@@ -125,7 +125,7 @@
 	}
 	
 	var FtpUIUploadList = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var	self			= this,
 			m_tag			= opts.ui_main.tag,
@@ -248,7 +248,7 @@
 	};
 	
 	var FtpUIUpload = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 
 		var	self		= this,
 			wftp		= opts.wftp;

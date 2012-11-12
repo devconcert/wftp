@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIMenu = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 		
 		var self	 = this,
 			wftp	 = opts.wftp;

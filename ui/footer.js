@@ -1,6 +1,6 @@
 (function(exports) {
 	var FtpUIFooter = function(opts) {
-		_.extend(this, new MvvmUI(opts.id));
+		vo.applyTo(this, opts.id);
 	}
 	
 	exports.FtpUIFooter = FtpUIFooter;
