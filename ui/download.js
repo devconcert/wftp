@@ -269,11 +269,8 @@
 				        	downloadFile(data.fileIndex + 1);
 				        }
 				        
-				        // 모든 파일이 업로드 되었을 경우,
+				        // 모든 파일이 다운로드 되었을 경우,
 		        		if(data.fileIndex == downlist.downlist.length - 1) {
-		        			// 파일 목록 갱신
-							self.wftp.body.changePath(path);
-		        			
 		        			// 전송시간 종료
 							timer.reset();
 							
