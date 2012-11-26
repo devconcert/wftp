@@ -13,11 +13,11 @@
 			// 테스트 FTP, 추가
 			self.addFtp({
 				name: "<b>wFTP 테스트</b>",
-				host: "ftp.inpost.kr",
+				host: "youngman.kr",
 				user: "wftp",
 				passwd: "wftp",
 				d_path: "/wftp",
-				url: "ftp.inpost.kr/static/wftp"
+				url: "seogi777.cafe24.com/static/wftp"
 			});
 		}
 		
