@@ -8,6 +8,6 @@
 		<a href="http://seogi1004.github.com/wftp/" title="오픈소스 바로가기" target="_blank">오픈소스</a><span class="seperator">|</span>
 		<a href="http://cloud.daum.net/" title="디자인출처 바로가기" target="_blank">디자인출처</a><span class="seperator">|</span>
 		<a href="http://youngman.kr" title="블로그 바로가기" target="_blank">블로그</a>
-		<a class="copyright" target="new">© Moon-Hak-I</a>&nbsp;&nbsp;
+		<a class="copyright" target="new">© 문학청년</a>&nbsp;&nbsp;
 	</div>
 </div>
