@@ -36,13 +36,15 @@
 <script src="ui/menu.js"></script>
 
 <script>
-	window.host = "http://app.inpost.kr/wftp";
+	window.host = "http://app.youngman.kr/wftp";
 </script>
 <script>
-	var index = null;
+	if($.browser.msie) {
+		alert("익스플로러에서는 기능이 제대로 동작하지 않습니다.\n크롬과 파이어폭스 최신 버전에서 실행하는 것을 권장합니다.");
+	}
 	
 	$(function() {
-		index = new FtpIndex("http://inpost.kr:1340");
+		window.index = new FtpIndex("http://inpost.kr:1340");
 	});	
 </script>
 
